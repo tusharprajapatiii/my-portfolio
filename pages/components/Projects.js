@@ -53,7 +53,7 @@ function Projects() {
           <motion.div animate={animation}>
             <img className="" src="./client.png" alt="" />
             <p className="text-purple-700">
-              Recent project- Client's portfolio
+              Recent project- Client&apos;s portfolio
             </p>
             <p className="text-[12px]">
               Static site built with react and tailwind{" "}
@@ -82,7 +82,10 @@ function Projects() {
         <div className="grid gap-20  my-3 md:grid-cols-2">
           <motion.div animate={animation}>
             <img src="kvar.png" alt="" />
-            <p className="text-purple-700"> Client's Company Marketplace </p>
+            <p className="text-purple-700">
+              {" "}
+              Client&apos;s Company Marketplace{" "}
+            </p>
             <p className="text-[12px]">
               worked on the backend and admin panel using express and mongodb
             </p>
@@ -94,8 +97,8 @@ function Projects() {
               Social Media website **On development{" "}
             </p>
             <p className="text-[12px]">
-              Built entirely with nextjs, made api's on next itself and mongo
-              for database
+              Built entirely with nextjs, made api&apos;s on next itself and
+              mongo for database
             </p>
           </motion.div>
         </div>
