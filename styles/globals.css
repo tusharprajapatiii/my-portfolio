@@ -21,7 +21,7 @@ a {
 * {
   box-sizing: border-box;
   color: silver;
-  font-family: "Titan One", cursive;
+  font-family: "Titan One";
 }
 
 @layer utilities {
