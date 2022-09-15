@@ -36,7 +36,7 @@ function Intro() {
         <div className="flex my-2   py-4 relative  flex-col md:flex-row  ">
           <motion.span
             initial={{ x: 0, y: 0 }}
-            transition={{ duration: 2.5, ease: "linear", delay: 6 }}
+            transition={{ duration: 2.2, ease: "linear", delay: 6 }}
             animate={{
               x: [
                 0, -50, -100, -150, -200, -250, -400, -700, -800, -900, -1000,
@@ -171,7 +171,7 @@ function Intro() {
               USHAR,
               <br />
               <span className="text-3xl lg:text-[32px] pl-4">
-                web developer
+                Web developer
               </span>
             </motion.h1>
           </div>

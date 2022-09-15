@@ -1,16 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@500&display=swap");
+
 @tailwind base;
 @tailwind components;
-
 @tailwind utilities;
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Titan+One&display=swap");
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  /* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
   background-color: black;
+  font-family: "Libre Bodoni", serif;
 }
 
 a {
@@ -21,7 +21,6 @@ a {
 * {
   box-sizing: border-box;
   color: silver;
-  font-family: "Titan One";
 }
 
 @layer utilities {
