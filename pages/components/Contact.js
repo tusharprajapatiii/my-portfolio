@@ -8,16 +8,16 @@ function Contact() {
           Contact ME
         </h1>
         <div className="md:p-10 py-4 space-y-2  md:space-y-4">
-          <p className="font-semibold md:text-lg">
+          <p className="font-semibold text-sm md:text-lg">
             {" "}
-            <span className="md:text-2xl text-purple-700 font-semibold">
+            <span className="md:text-2xl text-base  text-purple-700 font-semibold">
               Phone
             </span>{" "}
             9867838918
           </p>
-          <p className="font-semibold md:text-lg">
+          <p className="font-semibold text-sm md:text-lg">
             {" "}
-            <span className="md:text-2xl text-purple-700 font-semibold">
+            <span className="md:text-2xl text-base text-purple-700 font-semibold">
               Email
             </span>{" "}
             prajapatitushar789@gmail.com
