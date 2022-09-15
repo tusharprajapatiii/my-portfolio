@@ -1,9 +1,16 @@
+@tailwind base;
+@tailwind components;
+
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Titan+One&display=swap");
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: black;
 }
 
 a {
@@ -13,6 +20,153 @@ a {
 
 * {
   box-sizing: border-box;
+  color: silver;
+  font-family: "Titan One", cursive;
+}
+
+@layer utilities {
+  .clouds {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+  }
+
+  .box1 {
+    position: relative;
+    display: inline-block;
+    transform-style: preserve-3d;
+    right: 0;
+    top: 40px;
+
+    animation: skills 20s linear infinite;
+  }
+  @keyframes skills {
+    0% {
+      transform: perspective(1000px) rotateY(0deg);
+    }
+    100% {
+      transform: perspective(1000px) rotateY(360deg);
+    }
+  }
+  .box1 span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i) * 45deg)) translateZ(330px);
+    -webkit-box-reflect: below 0px
+      linear-gradient(transparent, transparent, #0004);
+  }
+  .box1 span img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50px;
+  }
+  .clouds img {
+    position: absolute;
+
+    width: 100%;
+    height: 58vh;
+    animation: animate calc(8s * var(--i)) linear infinite;
+    bottom: 0;
+    z-index: 120;
+  }
+
+  .text {
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    text-transform: uppercase;
+    font-family: verdana;
+    font-size: 3em;
+    font-weight: 700;
+    color: #f5f5f5;
+    text-shadow: 1px 1px 1px #919191, 1px 2px 1px #919191, 1px 3px 1px #919191,
+      1px 4px 1px #919191, 1px 5px 1px #919191, 1px 6px 1px #919191,
+      1px 7px 1px #919191, 1px 8px 1px #919191, 1px 9px 1px #919191,
+      1px 10px 1px #919191, 1px 18px 6px rgba(16, 16, 16, 0.4),
+      1px 22px 10px rgba(16, 16, 16, 0.2), 1px 25px 35px rgba(16, 16, 16, 0.2),
+      1px 30px 60px rgba(16, 16, 16, 0.4);
+  }
+  .skills1 {
+    --i: 1;
+  }
+  .skills2 {
+    --i: 2;
+  }
+  .skills3 {
+    --i: 3;
+  }
+  .skills4 {
+    --i: 4;
+  }
+  .skills5 {
+    --i: 5;
+  }
+  .skills6 {
+    --i: 6;
+  }
+  .skills7 {
+    --i: 7;
+  }
+  .skills8 {
+    --i: 8;
+  }
+  .cloud1 {
+    --i: 1;
+  }
+  .cloud2 {
+    --i: 2;
+  }
+  .cloud3 {
+    --i: 3;
+  }
+  .cloud4 {
+    --i: 4;
+  }
+  .cloud5 {
+    --i: 5;
+  }
+  .anime {
+    animation: anonymous 4s ease-in-out infinite;
+  }
+  @keyframes anonymous {
+    25% {
+      transform: rotate(7deg);
+    }
+    75% {
+      transform: rotate(-7deg);
+    }
+  }
+  @keyframes animate {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .clouds {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .box1 span {
+      transform: rotateY(calc(var(--i) * 45deg)) translateZ(230px);
+    }
+  }
 }
 
 @media (prefers-color-scheme: dark) {
