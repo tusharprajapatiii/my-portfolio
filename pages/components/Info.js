@@ -62,7 +62,7 @@ function Info() {
         />
         <img
           className="h-14 w-14 absolute right-[10%] bottom-[7%] "
-          src="./youtube1.png"
+          src="./You.png"
           alt=""
         />
       </motion.div>
