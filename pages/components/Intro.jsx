@@ -36,18 +36,18 @@ function Intro() {
         <div className="flex my-2   py-4 relative  flex-col md:flex-row  ">
           <motion.span
             initial={{ x: 0, y: 0 }}
-            transition={{ duration: 2.2, ease: "linear", delay: 6 }}
+            transition={{ duration: 2.5, ease: "linear", delay: 5 }}
             animate={{
               x: [
                 0, -50, -100, -150, -200, -250, -400, -700, -800, -900, -1000,
                 -1100, -1200, -1300, -1400, -1500,
               ],
               y: [
-                80, -20, -40, -60, -80, -100, -120, -140, -160, -180, -220,
-                -360, -400, -540, -680, -720, -800,
+                80, -80, -140, -260, -310, -350, -420, -440, -490, -520, -560,
+                -590, -660, -700, -720, -780, -800,
               ],
             }}
-            className="absolute bottom-0 z-40 right-20 "
+            className="absolute  z-40 -bottom-40 right-20 "
           >
             <IoIosRocket
               className="transform h-10 w-10 -rotate-90"
@@ -170,8 +170,8 @@ function Intro() {
               <b className="text-[70px] lg:text-[90px] text-violet-600 ">T</b>
               USHAR,
               <br />
-              <span className="text-3xl lg:text-[32px] pl-4">
-                Web developer
+              <span className="text-3xl  lg:text-[32px] pl-4">
+                Web Developer
               </span>
             </motion.h1>
           </div>

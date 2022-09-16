@@ -70,6 +70,7 @@ a {
     height: 100%;
     object-fit: cover;
     border-radius: 50px;
+    border: 5px solid purple;
   }
   .clouds img {
     position: absolute;
