@@ -34,6 +34,14 @@ function Intro() {
     <>
       <section className=" md:h-screen w-full md:flex  items-center xl:items-start lg:justify-start justify-center relative overflow-hidden z-10">
         <div className="flex my-2   py-4 relative  flex-col md:flex-row  ">
+          <motion.div
+            initial={{ y: "-50vh" }}
+            animate={{ y: "0vh" }}
+            transition={{ delay: 7 }}
+            className="absolute top-[18%] left-[6.5%] hidden lg:block "
+          >
+            <img className="h-20  w-20" src="./me.png" alt="" />
+          </motion.div>
           <motion.span
             initial={{ x: 0, y: 0 }}
             transition={{ duration: 2.5, ease: "linear", delay: 5 }}
@@ -164,10 +172,12 @@ function Intro() {
                 duration: 1.5,
                 delay: 3.5,
               }}
-              className="absolute lg:left-20 top-16 text-5xl md:text-[50px]  my-10 md:block hidden text-left "
+              className="absolute lg:left-20 top-16 text-5xl md:text-[50px]   my-10 md:block hidden text-left "
             >
               <br />
-              <b className="text-[70px] lg:text-[90px] text-violet-600 ">T</b>
+              <b className="text-[70px] lg:text-[90px] text-violet-600 text-shadow-1 ">
+                T
+              </b>
               USHAR,
               <br />
               <span className="text-3xl  lg:text-[32px] pl-4">

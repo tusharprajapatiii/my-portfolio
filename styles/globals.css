@@ -156,7 +156,9 @@ a {
       transform: translateX(100%);
     }
   }
-
+  .text-shadow-1 {
+    text-shadow: 4px 4px 8px silver;
+  }
   @media screen and (max-width: 768px) {
     .clouds {
       display: none;

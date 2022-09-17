@@ -63,7 +63,7 @@ function Frontend() {
       </h2>
       <div className="grid md:grid-cols-2 mt-8 gap-20">
         <motion.div
-          className="shadow-lg cursor-pointer p-2 hover:shadow-red-500   rounded-2xl shadow-purple-400 "
+          className="shadow-lg cursor-pointer p-2  rounded-sm shadow-purple-400 "
           animate={animation}
         >
           <img className="  " src="./client.png" alt="" />
@@ -75,7 +75,7 @@ function Frontend() {
           </p>
         </motion.div>{" "}
         <motion.div
-          className="shadow-lg cursor-pointer p-2 rounded-2xl shadow-purple-400 "
+          className="shadow-lg cursor-pointer p-2 rounded-sm shadow-purple-400 "
           animate={animation2}
         >
           <img src="./ecom.png" alt="" />
@@ -85,7 +85,7 @@ function Frontend() {
           </p>
         </motion.div>{" "}
         <motion.div
-          className="shadow-lg cursor-pointer p-2 rounded-2xl shadow-purple-400 "
+          className="shadow-lg cursor-pointer p-2 rounded-sm shadow-purple-400 "
           animate={animation}
         >
           <img src="./cable.png" alt="" />
@@ -141,7 +141,7 @@ function Fullstack() {
       <div className="grid gap-20  my-3 md:grid-cols-2">
         <motion.div
           animate={animation}
-          className="shadow-lg cursor-pointer p-2 rounded-2xl shadow-purple-400 "
+          className="shadow-lg cursor-pointer p-2 rounded-sm shadow-purple-400 "
         >
           <img src="kvar.png" alt="" />
           <p className="text-purple-700 font-semibold mt-1">
@@ -154,7 +154,7 @@ function Fullstack() {
         </motion.div>{" "}
         <motion.div
           animate={animation2}
-          className="shadow-lg cursor-pointer p-2 rounded-2xl shadow-purple-400 "
+          className="shadow-lg cursor-pointer p-2 rounded-sm shadow-purple-400 "
         >
           <img src="social.png" alt="" />
           <p className="text-purple-700 mt-1 font-semibold">
