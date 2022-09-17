@@ -9,7 +9,7 @@ function Projects() {
         <h1 className="text-purple-700 text-shadow text-[30px] md:text-[40px] font-extrabold">
           Personal & Client Projects
         </h1>
-        <div className="max-w-lg ">
+        <div className="max-w-lg text-xs md:text-base ">
           <p>Showcase of all the Projects worked till now.</p>
           <p>
             Major technologies used in these projects are React, Nextjs,

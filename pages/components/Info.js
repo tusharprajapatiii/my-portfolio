@@ -31,7 +31,7 @@ function Info() {
         <h1 className="text-purple-700 text-shadow text-[27px] md:text-[50px] font-extrabold">
           Me, MySelf & Journey
         </h1>
-        <div className="py-4 max-w-sm text-sm md:text-base ">
+        <div className="py-4 max-w-sm text-xs md:text-base ">
           Tushar, an IT engineer with a fusion of technology and creativity.
           <p>
             Started the development journey back in 2020 with a passion of
