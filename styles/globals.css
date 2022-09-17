@@ -166,7 +166,7 @@ a {
   }
   @media screen and (max-width: 768px) {
     .box1 span {
-      transform: rotateY(calc(var(--i) * 45deg)) translateZ(230px);
+      transform: rotateY(calc(var(--i) * 45deg)) translateZ(190px);
     }
   }
 }
