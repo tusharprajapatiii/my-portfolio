@@ -7,7 +7,7 @@ function Contact() {
         <h1 className="text-purple-700 text-shadow text-[30px] md:text-[50px] font-extrabold">
           Contact ME
         </h1>
-        <div className="md:p-10 py-4 space-y-2  md:space-y-4">
+        <div className="md:p-10 py-4 space-y-2  ">
           <p className="font-semibold text-sm md:text-lg">
             {" "}
             <span className="md:text-2xl text-base  text-purple-700 font-semibold">

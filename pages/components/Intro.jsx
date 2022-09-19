@@ -38,7 +38,7 @@ function Intro() {
             initial={{ y: "-50vh" }}
             animate={{ y: "0vh", rotate: [30, -30, 30, -30, 30, -30, 0] }}
             transition={{ delay: 6, duration: 2.5 }}
-            className="absolute top-[18%] left-[6.5%] hidden lg:block "
+            className="absolute top-[20%]  left-[6.5%] hidden lg:block "
           >
             <Image height={80} width={80} src="/me.png" alt="myself" />
           </motion.div>
