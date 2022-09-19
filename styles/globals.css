@@ -20,7 +20,7 @@ a {
 
 * {
   box-sizing: border-box;
-  color: silver;
+  color: white;
 }
 
 @layer utilities {
