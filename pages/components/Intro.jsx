@@ -37,14 +37,14 @@ function Intro() {
           <motion.div
             initial={{ y: "-50vh" }}
             animate={{ y: "0vh", rotate: [30, -30, 30, -30, 30, -30, 0] }}
-            transition={{ delay: 7, duration: 2.5 }}
+            transition={{ delay: 6, duration: 2.5 }}
             className="absolute top-[18%] left-[6.5%] hidden lg:block "
           >
             <Image height={80} width={80} src="/me.png" alt="myself" />
           </motion.div>
           <motion.span
-            initial={{ x: 0, y: 0 }}
-            transition={{ duration: 2.5, ease: "linear", delay: 5 }}
+            initial={{ x: 0, y: 0, opacity: 0 }}
+            transition={{ duration: 2.5, ease: "linear", delay: 4.5 }}
             animate={{
               x: [
                 "-10vw",
@@ -68,6 +68,7 @@ function Intro() {
                 "-110vh",
                 "-180vh",
               ],
+              opacity: 1,
             }}
             className="absolute  z-40 -bottom-40 right-10 "
           >
