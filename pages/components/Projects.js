@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import Image from "next/image";
 
 function Projects() {
   return (
@@ -66,7 +67,13 @@ function Frontend() {
           className="shadow-lg cursor-pointer p-2  rounded-sm shadow-purple-400 "
           animate={animation}
         >
-          <img className="  " src="./client.png" alt="" />
+          <Image
+            height={"20%"}
+            width={"40%"}
+            layout="responsive"
+            src="/client.png"
+            alt=""
+          />
           <p className="text-purple-700 font-semibold mt-1">
             Recent project- Client&apos;s portfolio
           </p>
@@ -78,7 +85,13 @@ function Frontend() {
           className="shadow-lg cursor-pointer p-2 rounded-sm shadow-purple-400 "
           animate={animation2}
         >
-          <img src="./ecom.png" alt="" />
+          <Image
+            height={"20%"}
+            width={"40%"}
+            layout="responsive"
+            src="/ecom.png"
+            alt=""
+          />
           <p className="text-purple-700 mt-1 font-semibold"> Ecommerce Site </p>
           <p className="text-[12px]">
             Built with react, vanilla css, Auth0, payment gateway etc{" "}
@@ -88,7 +101,13 @@ function Frontend() {
           className="shadow-lg cursor-pointer p-2 rounded-sm shadow-purple-400 "
           animate={animation}
         >
-          <img src="./cable.png" alt="" />
+          <Image
+            height={"20%"}
+            width={"40%"}
+            layout="responsive"
+            src="/cable.png"
+            alt=""
+          />
           <p className="text-purple-700 mt-1 font-semibold">
             {" "}
             Trailer watching site{" "}
@@ -143,7 +162,13 @@ function Fullstack() {
           animate={animation}
           className="shadow-lg cursor-pointer p-2 rounded-sm shadow-purple-400 "
         >
-          <img src="kvar.png" alt="" />
+          <Image
+            height={"20%"}
+            width={"40%"}
+            layout="responsive"
+            src="/kvar.png"
+            alt="project"
+          />
           <p className="text-purple-700 font-semibold mt-1">
             {" "}
             Client&apos;s Company Marketplace{" "}
@@ -156,7 +181,13 @@ function Fullstack() {
           animate={animation2}
           className="shadow-lg cursor-pointer p-2 rounded-sm shadow-purple-400 "
         >
-          <img src="social.png" alt="" />
+          <Image
+            height={"20%"}
+            width={"40%"}
+            layout="responsive"
+            src="/social.png"
+            alt=""
+          />
           <p className="text-purple-700 mt-1 font-semibold">
             {" "}
             Social Media website **On development{" "}

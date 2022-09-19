@@ -36,26 +36,40 @@ function Intro() {
         <div className="flex my-2   py-4 relative  flex-col md:flex-row  ">
           <motion.div
             initial={{ y: "-50vh" }}
-            animate={{ y: "0vh" }}
-            transition={{ delay: 7 }}
+            animate={{ y: "0vh", rotate: [30, -30, 30, -30, 30, -30, 0] }}
+            transition={{ delay: 7, duration: 2.5 }}
             className="absolute top-[18%] left-[6.5%] hidden lg:block "
           >
-            <img className="h-20  w-20" src="./me.png" alt="" />
+            <Image height={80} width={80} src="/me.png" alt="myself" />
           </motion.div>
           <motion.span
             initial={{ x: 0, y: 0 }}
             transition={{ duration: 2.5, ease: "linear", delay: 5 }}
             animate={{
               x: [
-                0, -50, -100, -150, -200, -250, -400, -700, -800, -900, -1000,
-                -1100, -1200, -1300, -1400, -1500,
+                "-10vw",
+                "-20vw",
+                "-30vw",
+                "-40vw",
+                "-50vw",
+                "-60vw",
+                "-70vw",
+                "-80vw",
+                "-100vw",
               ],
               y: [
-                80, -80, -140, -260, -310, -350, -420, -440, -490, -520, -560,
-                -590, -660, -700, -720, -780, -800,
+                "-12vh",
+                "-30vh",
+                "-45vh",
+                "-58vh",
+                "-72vh",
+                "-86vh",
+                "-100vh",
+                "-110vh",
+                "-180vh",
               ],
             }}
-            className="absolute  z-40 -bottom-40 right-20 "
+            className="absolute  z-40 -bottom-40 right-10 "
           >
             <IoIosRocket
               className="transform h-10 w-10 -rotate-90"
@@ -186,11 +200,12 @@ function Intro() {
             </motion.h1>
           </div>
           <div>
-            <motion.img
+            <Image
               className="md:anime m-auto"
               src={`https://thumbs.dreamstime.com/b/mask-activists-guy-fawkes-used-anonymous-lizard-squad-protesters-65170619.jpg`}
               height="510px"
               width="500px"
+              alt="anonymous"
             />
           </div>
         </div>
