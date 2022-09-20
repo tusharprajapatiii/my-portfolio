@@ -32,9 +32,12 @@ function Info() {
   return (
     <div
       ref={ref}
-      className="md:p-10 lg:flex relative justify-evenly sm:block lg:h-[70vh]"
+      className="md:p-10 lg:flex px-2 relative justify-evenly sm:block lg:h-[70vh]"
     >
-      <motion.div className="z-20 text-left " animate={animation}>
+      <motion.div
+        className="z-20 lg:basis-[50%] text-left "
+        animate={animation}
+      >
         {preview && (
           <h1 className="text-purple-700 gradient text-shadow text-[22px] md:text-[50px] font-extrabold">
             <Typewriter
@@ -46,7 +49,7 @@ function Info() {
             />
           </h1>
         )}
-        <div className="py-4 text-left  max-w-sm text-[10px] md:text-[15px] md:leading-6 ">
+        <div className="py-4 text-left tracking-wider max-w-sm text-[10px] md:text-[15px] md:leading-6 ">
           <p>
             Tushar, an IT engineer with a fusion of technology and creativity.
             Started the development journey back in 2020 with a passion of

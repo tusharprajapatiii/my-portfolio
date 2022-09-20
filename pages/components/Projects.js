@@ -17,10 +17,10 @@ function Projects() {
   return (
     <div
       ref={ref}
-      className=" pt-20 overflow-hidden relative mt-14 md:m-0 md:px-6"
+      className=" pt-6 overflow-hidden relative mt-14 md:m-0 md:px-6"
     >
       <div
-        className={`text-3xl opacity-10 absolute hidden lg:block  md:text-[160px] right-32  name tracking-wider whitespace-nowrap text-center w-full bg-transparent font-bold text-shadow top-[14%] `}
+        className={`text-3xl opacity-10 absolute hidden lg:block  md:text-[160px] right-32  name tracking-wider whitespace-nowrap text-center w-full bg-transparent font-bold text-shadow top-[17%] `}
       >
         WORK
       </div>
@@ -36,7 +36,7 @@ function Projects() {
             />
           )}
         </h1>
-        <div className="max-w-lg text-[10px] text-left py-2 md:text-[15px] md:leading-6 ">
+        <div className="max-w-lg text-[10px] tracking-wider text-left py-2 md:text-[15px] md:leading-6 ">
           <p>Showcase of all the Projects worked till now.</p>
           <p>
             Major technologies used in these projects are React, Nextjs,

@@ -177,9 +177,9 @@ a {
   }
   @media screen and (max-width: 767px) {
     .box1 span {
-      transform: rotateY(calc(var(--i) * 45deg)) translateZ(180px);
-      height: 80%;
-      width: 80%;
+      transform: rotateY(calc(var(--i) * 45deg)) translateZ(200px);
+      height: 90%;
+      width: 90%;
     }
   }
 }
