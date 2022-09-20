@@ -188,15 +188,15 @@ function Intro() {
                 duration: 1.5,
                 delay: 3.5,
               }}
-              className="absolute lg:left-20 top-16 text-5xl md:text-[50px]   my-10 md:block hidden text-left "
+              className="absolute lg:left-20  top-16 text-5xl md:text-[50px]   my-10 md:block hidden text-left "
             >
               <br />
-              <b className="text-[70px] lg:text-[95px] text-violet-800 text-shadow-1 ">
+              <b className="text-[70px] lg:text-[95px] gradient  text-violet-800  ">
                 T
               </b>
-              USHAR,
+              <span className="gradient1">USHAR</span>
               <br />
-              <span className="text-3xl  lg:text-[32px] pl-4">
+              <span className="text-3xl gradient1  lg:text-[32px] pl-4">
                 Web Developer
               </span>
             </motion.h1>

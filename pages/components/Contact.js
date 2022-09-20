@@ -4,7 +4,7 @@ function Contact() {
   return (
     <div>
       <div className="max-w-lg mb-6">
-        <h1 className="text-purple-700 text-shadow text-[30px] md:text-[50px] font-extrabold">
+        <h1 className="gradient text-shadow text-[30px] md:text-[50px] font-extrabold">
           Contact ME
         </h1>
         <div className="md:p-10 py-4 space-y-2  ">

@@ -28,12 +28,12 @@ function Info() {
   return (
     <div ref={ref} className="md:p-10 flex relative justify-evenly lg:h-[70vh]">
       <motion.div className="z-20" animate={animation}>
-        <h1 className="text-purple-700 text-shadow text-[27px] md:text-[50px] font-extrabold">
+        <h1 className="text-purple-700 gradient text-shadow text-[27px] md:text-[50px] font-extrabold">
           Me, MySelf & Journey
         </h1>
-        <div className="py-4 max-w-sm text-xs md:text-[15px] md:leading-6 ">
-          Tushar, an IT engineer with a fusion of technology and creativity.
+        <div className="py-4  max-w-sm text-xs md:text-[15px] md:leading-6 ">
           <p>
+            Tushar, an IT engineer with a fusion of technology and creativity.
             Started the development journey back in 2020 with a passion of
             building and learning new things; from there learning every bit that
             comes on my way.

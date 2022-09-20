@@ -7,7 +7,7 @@ function Projects() {
   return (
     <div className=" pt-20 overflow-hidden mt-14 md:m-0 px-6">
       <div className="">
-        <h1 className="text-purple-700 text-shadow text-[30px] md:text-[40px] font-extrabold">
+        <h1 className="gradient text-shadow text-[30px] md:text-[40px] font-extrabold">
           Personal & Client Projects
         </h1>
         <div className="max-w-lg text-xs md:text-[15px] md:leading-6 ">

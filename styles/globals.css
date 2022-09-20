@@ -137,6 +137,17 @@ a {
   .cloud5 {
     --i: 5;
   }
+  .gradient {
+    background: -webkit-linear-gradient(violet, blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .gradient1 {
+    font-size: 46px;
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
   .anime {
     animation: anonymous 4s ease-in-out infinite;
   }
@@ -159,7 +170,7 @@ a {
   .text-shadow-1 {
     text-shadow: 4px 4px 8px silver;
   }
-  @media screen and (max-width: 900px) {
+  @media screen and (max-width: 1023px) {
     .clouds {
       display: none;
     }
