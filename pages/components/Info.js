@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-
+import { Typewriter } from "react-simple-typewriter";
 function Info() {
   const { ref, inView, entry } = useInView({
     threshold: 0.2,
@@ -26,12 +26,22 @@ function Info() {
     }
   }, [inView]);
   return (
-    <div ref={ref} className="md:p-10 flex relative justify-evenly lg:h-[70vh]">
-      <motion.div className="z-20" animate={animation}>
-        <h1 className="text-purple-700 gradient text-shadow text-[27px] md:text-[50px] font-extrabold">
-          Me, MySelf & Journey
-        </h1>
-        <div className="py-4  max-w-sm text-xs md:text-[15px] md:leading-6 ">
+    <div
+      ref={ref}
+      className="md:p-10 lg:flex relative justify-evenly sm:block lg:h-[70vh]"
+    >
+      <motion.div className="z-20 text-left " animate={animation}>
+        {inView && (
+          <h1 className="text-purple-700 gradient text-shadow text-[22px] md:text-[50px] font-extrabold">
+            <Typewriter
+              words={["ME, MYSELF & JOURNEY"]}
+              cursor
+              cursorStyle="|"
+              typeSpeed={200}
+            />
+          </h1>
+        )}
+        <div className="py-4 text-left  max-w-sm text-[10px] md:text-[15px] md:leading-6 ">
           <p>
             Tushar, an IT engineer with a fusion of technology and creativity.
             Started the development journey back in 2020 with a passion of
@@ -44,7 +54,7 @@ function Info() {
           <p>Served service to three clients as a freelancer till now.</p>
         </div>
       </motion.div>
-      <motion.div className="relative z-10 animate-bounce md:flex justify-center items-center hidden  mx-10 right-0 top-6">
+      <motion.div className="relative z-10 animate-bounce lg:flex justify-center items-center hidden  mx-10 right-0 top-6">
         <motion.img
           animate={animation2}
           className="h-96  opacity-25"

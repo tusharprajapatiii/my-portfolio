@@ -2,15 +2,25 @@ import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import Image from "next/image";
-import Link from "next/link";
+import { Typewriter } from "react-simple-typewriter";
 function Projects() {
+  const { ref, inView } = useInView({
+    threshold: 0,
+  });
   return (
-    <div className=" pt-20 overflow-hidden mt-14 md:m-0 px-6">
+    <div ref={ref} className=" pt-20 overflow-hidden mt-14 md:m-0 md:px-6">
       <div className="">
-        <h1 className="gradient text-shadow text-[30px] md:text-[40px] font-extrabold">
-          Personal & Client Projects
+        <h1 className="gradient text-shadow text-left text-[20px] md:text-[40px] font-extrabold">
+          {inView && (
+            <Typewriter
+              words={["PERSONAL & CLIENT PROJECTS"]}
+              cursor
+              cursorStyle="|"
+              typeSpeed={100}
+            />
+          )}
         </h1>
-        <div className="max-w-lg text-xs md:text-[15px] md:leading-6 ">
+        <div className="max-w-lg text-[10px] text-left py-2 md:text-[15px] md:leading-6 ">
           <p>Showcase of all the Projects worked till now.</p>
           <p>
             Major technologies used in these projects are React, Nextjs,
@@ -79,10 +89,10 @@ function Frontend() {
               src="/client.png"
               alt=""
             />
-            <p className="text-purple-700 text-sm md:text-base font-semibold mt-1">
-              Recent project- Client&apos;s portfolio
+            <p className="text-purple-700 text-xs md:text-base font-semibold mt-1">
+              Recent project- Client&apos;s portfolio *on process
             </p>
-            <p className="text-[12px]">
+            <p className=" text-[10px] md:text-[12px]">
               Static site built with react and tailwind{" "}
             </p>
           </motion.div>
@@ -103,11 +113,11 @@ function Frontend() {
               src="/ecom.png"
               alt=""
             />
-            <p className="text-purple-700 mt-1 text-sm md:text-base font-semibold">
+            <p className="text-purple-700 mt-1 text-xs md:text-base font-semibold">
               {" "}
               Ecommerce Site{" "}
             </p>
-            <p className="text-[12px]">
+            <p className="text-[10px] md:text-[12px]">
               Built with react, vanilla css, Auth0, payment gateway etc{" "}
             </p>
           </motion.div>
@@ -128,11 +138,11 @@ function Frontend() {
               src="/cable.png"
               alt=""
             />
-            <p className="text-purple-700 text-sm md:text-base mt-1 font-semibold">
+            <p className="text-purple-700 text-xs md:text-base mt-1 font-semibold">
               {" "}
               Trailer watching site{" "}
             </p>
-            <p className="text-[12px]">
+            <p className="text-[10px] md:text-[12px]">
               First ever React Project using TMDB API{" "}
             </p>
           </motion.div>
@@ -191,11 +201,11 @@ function Fullstack() {
               src="/kvar.png"
               alt="project"
             />
-            <p className="text-purple-700 text-sm md:text-base font-semibold mt-1">
+            <p className="text-purple-700 text-xs md:text-base font-semibold mt-1">
               {" "}
               Client&apos;s Company Marketplace{" "}
             </p>
-            <p className="text-[12px]">
+            <p className="text-[10px] md:text-[12px]">
               worked on the backend and admin panel using express and mongodb
             </p>
           </motion.div>
@@ -216,11 +226,11 @@ function Fullstack() {
               src="/social.png"
               alt=""
             />
-            <p className="text-purple-700 mt-1 text-sm md:text-base font-semibold">
+            <p className="text-purple-700 mt-1 text-xs md:text-base font-semibold">
               {" "}
               Social Media website **On development{" "}
             </p>
-            <p className="text-[12px]">
+            <p className="text-[10px] md:text-[12px]">
               Built entirely with nextjs, made api&apos;s on next itself and
               mongo for database
             </p>

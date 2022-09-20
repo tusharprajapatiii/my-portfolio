@@ -175,9 +175,11 @@ a {
       display: none;
     }
   }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     .box1 span {
-      transform: rotateY(calc(var(--i) * 45deg)) translateZ(190px);
+      transform: rotateY(calc(var(--i) * 45deg)) translateZ(180px);
+      height: 80%;
+      width: 80%;
     }
   }
 }
