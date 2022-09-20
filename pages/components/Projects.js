@@ -63,7 +63,11 @@ function Frontend() {
         frontend projects...
       </h2>
       <div className="grid md:grid-cols-2 mt-8 gap-20">
-        <a target="_blank" href={"http://client-portfolio-lyart.vercel.app"}>
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href={"http://client-portfolio-lyart.vercel.app"}
+        >
           <motion.div
             className="shadow-lg cursor-pointer p-2  rounded-sm shadow-purple-400 "
             animate={animation}
@@ -75,7 +79,7 @@ function Frontend() {
               src="/client.png"
               alt=""
             />
-            <p className="text-purple-700 font-semibold mt-1">
+            <p className="text-purple-700 text-sm md:text-base font-semibold mt-1">
               Recent project- Client&apos;s portfolio
             </p>
             <p className="text-[12px]">
@@ -86,6 +90,7 @@ function Frontend() {
         <a
           href="https://react-course-comfy-sloth-store.netlify.app/"
           target="_blank"
+          rel="noreferrer"
         >
           <motion.div
             className="shadow-lg cursor-pointer p-2 rounded-sm shadow-purple-400 "
@@ -98,7 +103,7 @@ function Frontend() {
               src="/ecom.png"
               alt=""
             />
-            <p className="text-purple-700 mt-1 font-semibold">
+            <p className="text-purple-700 mt-1 text-sm md:text-base font-semibold">
               {" "}
               Ecommerce Site{" "}
             </p>
@@ -107,7 +112,11 @@ function Frontend() {
             </p>
           </motion.div>
         </a>
-        <a href="https://cableflix-mern.netlify.app" target="_blank">
+        <a
+          href="https://cableflix-mern.netlify.app"
+          rel="noreferrer"
+          target="_blank"
+        >
           <motion.div
             className="shadow-lg cursor-pointer p-2 rounded-sm shadow-purple-400 "
             animate={animation}
@@ -119,7 +128,7 @@ function Frontend() {
               src="/cable.png"
               alt=""
             />
-            <p className="text-purple-700 mt-1 font-semibold">
+            <p className="text-purple-700 text-sm md:text-base mt-1 font-semibold">
               {" "}
               Trailer watching site{" "}
             </p>
@@ -170,7 +179,7 @@ function Fullstack() {
         FullStack projects...
       </h2>
       <div className="grid gap-20  my-3 md:grid-cols-2">
-        <a href="https://kvartech.in/" target="_blank">
+        <a href="https://kvartech.in/" rel="noreferrer" target="_blank">
           <motion.div
             animate={animation}
             className="shadow-lg cursor-pointer p-2 rounded-sm shadow-purple-400 "
@@ -182,7 +191,7 @@ function Fullstack() {
               src="/kvar.png"
               alt="project"
             />
-            <p className="text-purple-700 font-semibold mt-1">
+            <p className="text-purple-700 text-sm md:text-base font-semibold mt-1">
               {" "}
               Client&apos;s Company Marketplace{" "}
             </p>
@@ -194,6 +203,7 @@ function Fullstack() {
         <a
           href="https://nextjs-social-mediaaa.vercel.app/signup"
           target="_blank"
+          rel="noreferrer"
         >
           <motion.div
             animate={animation2}
@@ -206,7 +216,7 @@ function Fullstack() {
               src="/social.png"
               alt=""
             />
-            <p className="text-purple-700 mt-1 font-semibold">
+            <p className="text-purple-700 mt-1 text-sm md:text-base font-semibold">
               {" "}
               Social Media website **On development{" "}
             </p>

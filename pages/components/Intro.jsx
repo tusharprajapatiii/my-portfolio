@@ -69,8 +69,9 @@ function Intro() {
                 "-180vh",
               ],
               opacity: 1,
+              scale: 5,
             }}
-            className="absolute  z-40 -bottom-40 right-10 "
+            className="absolute hidden lg:block  z-40 -bottom-40 right-10 "
           >
             <IoIosRocket
               className="transform h-10 w-10 -rotate-90"
