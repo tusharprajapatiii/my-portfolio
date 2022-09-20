@@ -28,14 +28,14 @@ function Info() {
       animation.start({ opacity: 0 });
       animation2.start({ x: "-100vw", opacity: 0 });
     }
-  }, []);
+  }, [preview, inView]);
   return (
     <div
       ref={ref}
       className="md:p-10 lg:flex relative justify-evenly sm:block lg:h-[70vh]"
     >
       <motion.div className="z-20 text-left " animate={animation}>
-        {inView && (
+        {preview && (
           <h1 className="text-purple-700 gradient text-shadow text-[22px] md:text-[50px] font-extrabold">
             <Typewriter
               words={["ME, MYSELF & JOURNEY"]}

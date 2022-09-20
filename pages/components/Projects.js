@@ -1,22 +1,30 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import Image from "next/image";
 import { Typewriter } from "react-simple-typewriter";
 function Projects() {
+  const [preview, setPreview] = useState(false);
   const { ref, inView } = useInView({
     threshold: 0,
   });
+  useEffect(() => {
+    if (inView) {
+      setPreview(true);
+    }
+  }, [preview, inView]);
+
   return (
     <div ref={ref} className=" pt-20 overflow-hidden mt-14 md:m-0 md:px-6">
       <div className="">
         <h1 className="gradient text-shadow text-left text-[20px] md:text-[40px] font-extrabold">
-          {inView && (
+          {preview && (
             <Typewriter
               words={["PERSONAL & CLIENT PROJECTS"]}
               cursor
               cursorStyle="|"
               typeSpeed={100}
+              delaySpeed={30}
             />
           )}
         </h1>
@@ -37,6 +45,8 @@ function Projects() {
 export default Projects;
 
 function Frontend() {
+  const [preview, setPreview] = useState(false);
+
   const { ref, inView } = useInView({
     threshold: 0.2,
   });
@@ -44,6 +54,9 @@ function Frontend() {
   const animation2 = useAnimation();
   useEffect(() => {
     if (inView) {
+      setPreview(true);
+    }
+    if (preview) {
       animation.start({
         x: 0,
         transition: { duration: 1 },
@@ -58,7 +71,7 @@ function Frontend() {
         opacity: [0.2, 0.3, 0.4, 0.9, 1],
       });
     }
-    if (!inView) {
+    if (!preview) {
       animation.start({
         x: "-50vw",
       });
@@ -66,7 +79,7 @@ function Frontend() {
         x: "50vw",
       });
     }
-  }, [inView]);
+  }, [preview, inView]);
   return (
     <div ref={ref} className="py-3">
       <h2 className="text-purple-700 text-shadow  md:text-[20px] font-extrabold">
@@ -153,6 +166,8 @@ function Frontend() {
 }
 
 function Fullstack() {
+  const [preview, setPreview] = useState(false);
+
   const { ref, inView } = useInView({
     threshold: 0.2,
   });
@@ -160,6 +175,9 @@ function Fullstack() {
   const animation2 = useAnimation();
   useEffect(() => {
     if (inView) {
+      setPreview(true);
+    }
+    if (preview) {
       animation.start({
         x: 0,
         transition: { duration: 1 },
@@ -174,7 +192,7 @@ function Fullstack() {
         opacity: [0.2, 0.3, 0.4, 0.9, 1],
       });
     }
-    if (!inView) {
+    if (!preview) {
       animation.start({
         x: "-50vw",
       });
@@ -182,7 +200,7 @@ function Fullstack() {
         x: "50vw",
       });
     }
-  }, [inView]);
+  }, [preview, inView]);
   return (
     <div ref={ref} className="py-3">
       <h2 className="text-purple-700 text-shadow text-[20px] font-extrabold">
