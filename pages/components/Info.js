@@ -41,7 +41,8 @@ function Info() {
               words={["ME, MYSELF & JOURNEY"]}
               cursor
               cursorStyle="|"
-              typeSpeed={200}
+              typeSpeed={100}
+              delaySpeed={30}
             />
           </h1>
         )}
@@ -66,12 +67,12 @@ function Info() {
           alt=""
         />
         <img
-          className="lg:h-14 rounded-3xl h-12 w-10 lg:w-14 border-[6px] border-purple-800 absolute left-[10%] md:bottom-[30%] lg:bottom-[25%]"
+          className="lg:h-14 rounded-3xl h-12 w-10 lg:w-14 border-[5px] border-purple-800 absolute left-[10%] md:bottom-[30%] lg:bottom-[25%]"
           src="./udemy1.png"
           alt=""
         />
         <img
-          className="lg:h-14 rounded-3xl h-12 w-10 border-[6px] border-purple-800 shadow-lg lg:w-14 absolute right-[10%] md:bottom-[30%] lg:bottom-[25%]"
+          className="lg:h-14 rounded-3xl h-12 w-10 border-[5px] border-purple-800 shadow-lg lg:w-14 absolute right-[10%] md:bottom-[30%] lg:bottom-[25%]"
           src="./You.png"
           alt=""
         />

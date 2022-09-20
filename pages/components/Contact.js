@@ -6,7 +6,12 @@ function Contact() {
     threshold: 0,
   });
   return (
-    <div>
+    <div className="relative overflow-hidden">
+      <div
+        className={`text-3xl opacity-10 absolute   md:text-[160px] left-40  name tracking-wider whitespace-nowrap text-center w-full bg-transparent font-bold text-shadow  bottom-6 `}
+      >
+        CONTACT
+      </div>
       <div ref={ref} className="max-w-lg mb-6">
         <h1 className="gradient text-shadow text-[30px] md:text-[50px] font-extrabold">
           {inView && (

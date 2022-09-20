@@ -2,7 +2,12 @@ import React, { useEffect } from "react";
 
 function Skills() {
   return (
-    <div className="relative  md:h-[70vh] justify-center items-center flex">
+    <div className="relative  md:h-[70vh] justify-center items-center overflow-hidden flex">
+      <div
+        className={`text-3xl opacity-10 absolute hidden lg:block  md:text-[160px] left-40  name tracking-wider whitespace-nowrap text-center w-full bg-transparent font-bold text-shadow top-10 `}
+      >
+        CORE SKILLS
+      </div>
       <div className=" box1 h-[150px]  w-[150px] md:h-[190px] md:w-[190px] ">
         <span className="skills1">
           <img src="./React.png" alt="" />

@@ -15,7 +15,15 @@ function Projects() {
   }, [preview, inView]);
 
   return (
-    <div ref={ref} className=" pt-20 overflow-hidden mt-14 md:m-0 md:px-6">
+    <div
+      ref={ref}
+      className=" pt-20 overflow-hidden relative mt-14 md:m-0 md:px-6"
+    >
+      <div
+        className={`text-3xl opacity-10 absolute hidden lg:block  md:text-[160px] right-32  name tracking-wider whitespace-nowrap text-center w-full bg-transparent font-bold text-shadow top-[14%] `}
+      >
+        WORK
+      </div>
       <div className="">
         <h1 className="gradient text-shadow text-left text-[20px] md:text-[40px] font-extrabold">
           {preview && (
@@ -202,7 +210,7 @@ function Fullstack() {
     }
   }, [preview, inView]);
   return (
-    <div ref={ref} className="py-3">
+    <div ref={ref} className="py-3 ">
       <h2 className="text-purple-700 text-shadow text-[20px] font-extrabold">
         FullStack projects...
       </h2>
