@@ -1,8 +1,9 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { Typewriter } from "react-simple-typewriter";
 function Info() {
+  const [preview, setPreview] = useState(false);
   const { ref, inView, entry } = useInView({
     threshold: 0.2,
   });
@@ -10,6 +11,9 @@ function Info() {
   const animation2 = useAnimation();
   useEffect(() => {
     if (inView) {
+      setPreview(true);
+    }
+    if (preview) {
       animation.start({
         transition: { duration: 2.5 },
         opacity: [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.8, 1],
@@ -20,11 +24,11 @@ function Info() {
         opacity: [0.2, 0.4, 0.6, 0.8, 1],
       });
     }
-    if (!inView) {
+    if (!preview) {
       animation.start({ opacity: 0 });
       animation2.start({ x: "-100vw", opacity: 0 });
     }
-  }, [inView]);
+  }, []);
   return (
     <div
       ref={ref}
