@@ -204,14 +204,14 @@ function Intro() {
               <span className="text-gray-500 font1 text-[38px]  ">Hello,</span>
               <br />
               <span className="text-gray-500 text-[38px]">
-                <span className="font text-violet-800 text-[48px]">T</span>
+                <span className="font gradient text-[48px]">T</span>
                 ushar here,
               </span>
               <br />
               <span className="text-gray-500 text-[40px]">web developer</span>
             </h1>
             <div className="md:hidden">
-              <div className="border-2 my-8 border-purple-600 text-[20px] max-w-fit ml-3 p-2 ">
+              <div className="border-2 my-8 border-cyan-500 text-[20px] max-w-fit ml-3 p-2 ">
                 Scroll Down
               </div>
             </div>

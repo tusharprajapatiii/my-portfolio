@@ -35,11 +35,11 @@ function Info() {
       className="md:p-10 lg:flex px-2 relative justify-evenly sm:block lg:h-[70vh]"
     >
       <motion.div
-        className="z-20 lg:basis-[50%] text-left "
+        className="z-20  lg:basis-[50%] text-left "
         animate={animation}
       >
         {preview && (
-          <h1 className="text-purple-700 font gradient text-shadow text-[34px] md:text-[46px] font-extrabold">
+          <h1 className=" gradient font  text-shadow text-[34px] md:text-[46px] font-extrabold">
             <Typewriter
               words={["ME, MYSELF & I"]}
               cursor
@@ -70,12 +70,12 @@ function Info() {
           alt=""
         />
         <img
-          className="lg:h-14 rounded-3xl h-12 w-10 lg:w-14 border-[5px] border-purple-800 absolute left-[10%] md:bottom-[30%] lg:bottom-[25%]"
+          className="lg:h-14 rounded-3xl h-12 w-10 lg:w-14 border-[5px] border-cyan-500 absolute left-[10%] md:bottom-[30%] lg:bottom-[25%]"
           src="./udemy1.png"
           alt=""
         />
         <img
-          className="lg:h-14 rounded-3xl h-12 w-10 border-[5px] border-purple-800 shadow-lg lg:w-14 absolute right-[10%] md:bottom-[30%] lg:bottom-[25%]"
+          className="lg:h-14 rounded-3xl h-12 w-10 border-[5px] border-cyan-500 shadow-lg lg:w-14 absolute right-[10%] md:bottom-[30%] lg:bottom-[25%]"
           src="./You.png"
           alt=""
         />

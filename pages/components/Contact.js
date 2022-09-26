@@ -26,14 +26,14 @@ function Contact() {
         <div className="md:p-10 space-y-3 md:space-y-0 py-5 md:flex justify-between ">
           <p className="font-semibold text-xs md:text-lg">
             {" "}
-            <span className="md:text-2xl   text-purple-700 font-semibold">
+            <span className="md:text-2xl gradient font-semibold">
               Phone
             </span>{" "}
             <span>9867838918</span>
           </p>
           <p className="font-semibold text-xs md:text-lg">
             {" "}
-            <span className="md:text-2xl  text-purple-700 font-semibold">
+            <span className="md:text-2xl  gradient font-semibold">
               Email
             </span>{" "}
             <span>prajapatitushar789@gmail.com</span>

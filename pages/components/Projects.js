@@ -88,7 +88,7 @@ function Frontend() {
   }, [preview, inView]);
   return (
     <div ref={ref} className="py-3">
-      <h2 className="text-purple-700 text-shadow  md:text-[20px] font-extrabold">
+      <h2 className="gradient text-shadow  md:text-[20px] font-extrabold">
         frontend projects...
       </h2>
       <div className="grid md:grid-cols-2 mt-8 gap-20">
@@ -98,7 +98,7 @@ function Frontend() {
           href={"http://client-portfolio-lyart.vercel.app"}
         >
           <motion.div
-            className="shadow-lg cursor-pointer p-2  rounded-sm shadow-purple-400 "
+            className="shadow-md cursor-pointer p-2  rounded-sm shadow-cyan-500 "
             animate={animation}
           >
             <Image
@@ -108,7 +108,7 @@ function Frontend() {
               src="/client.png"
               alt=""
             />
-            <p className="text-purple-700 text-xs md:text-base font-semibold mt-1">
+            <p className="gradient text-xs md:text-base font-semibold mt-1">
               Recent project- Client&apos;s portfolio *on process
             </p>
             <p className=" text-[10px] md:text-[12px]">
@@ -122,7 +122,7 @@ function Frontend() {
           rel="noreferrer"
         >
           <motion.div
-            className="shadow-lg cursor-pointer p-2 rounded-sm shadow-purple-400 "
+            className="shadow-md cursor-pointer p-2 rounded-sm shadow-cyan-500 "
             animate={animation2}
           >
             <Image
@@ -132,7 +132,7 @@ function Frontend() {
               src="/ecom.png"
               alt=""
             />
-            <p className="text-purple-700 mt-1 text-xs md:text-base font-semibold">
+            <p className="gradient mt-1 text-xs md:text-base font-semibold">
               {" "}
               Ecommerce Site{" "}
             </p>
@@ -147,7 +147,7 @@ function Frontend() {
           target="_blank"
         >
           <motion.div
-            className="shadow-lg cursor-pointer p-2 rounded-sm shadow-purple-400 "
+            className="shadow-md cursor-pointer p-2 rounded-sm shadow-cyan-500 "
             animate={animation}
           >
             <Image
@@ -157,7 +157,7 @@ function Frontend() {
               src="/cable.png"
               alt=""
             />
-            <p className="text-purple-700 text-xs md:text-base mt-1 font-semibold">
+            <p className="gradient text-xs md:text-base mt-1 font-semibold">
               {" "}
               Trailer watching site{" "}
             </p>
@@ -207,14 +207,14 @@ function Fullstack() {
   }, [preview, inView]);
   return (
     <div ref={ref} className="py-3 ">
-      <h2 className="text-purple-700 text-shadow text-[20px] font-extrabold">
+      <h2 className="gradient text-shadow text-[20px] font-extrabold">
         FullStack projects...
       </h2>
       <div className="grid gap-20  my-3 md:grid-cols-2">
         <a href="https://kvartech.in/" rel="noreferrer" target="_blank">
           <motion.div
             animate={animation}
-            className="shadow-lg cursor-pointer p-2 rounded-sm shadow-purple-400 "
+            className="shadow-md cursor-pointer p-2 rounded-sm shadow-cyan-500 "
           >
             <Image
               height={"20%"}
@@ -223,7 +223,7 @@ function Fullstack() {
               src="/kvar.png"
               alt="project"
             />
-            <p className="text-purple-700 text-xs md:text-base font-semibold mt-1">
+            <p className="gradient text-xs md:text-base font-semibold mt-1">
               {" "}
               Client&apos;s Company Marketplace{" "}
             </p>
@@ -239,7 +239,7 @@ function Fullstack() {
         >
           <motion.div
             animate={animation2}
-            className="shadow-lg cursor-pointer p-2 rounded-sm shadow-purple-400 "
+            className="shadow-md cursor-pointer p-2 rounded-sm shadow-cyan-500 "
           >
             <Image
               height={"20%"}
@@ -248,7 +248,7 @@ function Fullstack() {
               src="/social.png"
               alt=""
             />
-            <p className="text-purple-700 mt-1 text-xs md:text-base font-semibold">
+            <p className="gradient mt-1 text-xs md:text-base font-semibold">
               {" "}
               Social Media website **On development{" "}
             </p>
