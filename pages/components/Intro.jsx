@@ -34,14 +34,14 @@ function Intro() {
     <>
       <section className=" h-screen w-full md:flex  items-center xl:items-start lg:justify-start justify-center relative overflow-hidden z-10">
         <div className="flex my-2   py-4 relative  flex-col md:flex-row  ">
-          {/* <motion.div
+          <motion.div
             initial={{ y: "-50vh" }}
             animate={{ y: "0vh", rotate: [30, -30, 30, -30, 30, -30, 0] }}
-            transition={{ delay: 4, duration: 2.5 }}
-            className="absolute top-[20%]  left-[6.5%] hidden lg:block "
+            transition={{ delay: 3.5, duration: 2.5 }}
+            className="absolute top-[18%]   left-[6.5%] hidden lg:block "
           >
             <Image height={80} width={80} src="/me.png" alt="myself" />
-          </motion.div> */}
+          </motion.div>
           <motion.span
             initial={{ x: 0, y: 0, opacity: 0 }}
             transition={{ duration: 2.5, ease: "linear", delay: 2 }}
@@ -188,17 +188,15 @@ function Intro() {
                 duration: 1.5,
                 delay: 0.5,
               }}
-              className="absolute lg:left-20  top-16 text-5xl md:text-[50px] hidden md:block  my-10  text-left "
+              className="absolute lg:left-20  top-16 text-5xl md:text-[40px] hidden md:block  my-10  text-left "
             >
               <br />
-              <b className="text-[70px] lg:text-[95px] gradient font text-violet-800  ">
+              <b className="text-[70px] lg:text-[95px] gradient font font-extrabold text-violet-800  ">
                 T
               </b>
               <span className="gradient1">USHAR</span>
               <br />
-              <span className="text-3xl gradient1  lg:text-[32px] ">
-                Web Developer
-              </span>
+              <span className=" gradient1  lg:text-[32px] ">Web Developer</span>
             </motion.h1>
             <h1 className="relative px-2 leading-6 flex justify-center flex-col md:hidden">
               <span className="text-gray-500 font1 text-[38px]  ">Hello,</span>

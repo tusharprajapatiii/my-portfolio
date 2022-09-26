@@ -62,7 +62,7 @@ function Info() {
           <p>Served service to three clients as a freelancer till now.</p>
         </div>
       </motion.div>
-      <motion.div className="relative z-10 animate-bounce lg:flex justify-center items-center hidden  mx-10 right-0 top-6">
+      <motion.div className="relative z-10 animate-bounce lg:flex justify-center items-center hidden  mx-10 right-0 top-8">
         <motion.img
           animate={animation2}
           className="h-96  opacity-25"
