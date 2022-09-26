@@ -17,7 +17,7 @@ function Projects() {
   return (
     <div
       ref={ref}
-      className=" pt-6 overflow-hidden relative mt-14 md:m-0 md:px-6"
+      className=" pt-6 px-2 overflow-hidden relative mt-14 md:m-0 md:px-6"
     >
       <div
         className={`text-3xl opacity-10 absolute hidden lg:block  md:text-[160px] right-32  name tracking-wider whitespace-nowrap text-center w-full bg-transparent font-bold text-shadow top-[17%] `}
@@ -25,10 +25,10 @@ function Projects() {
         WORK
       </div>
       <div className="">
-        <h1 className="gradient text-shadow text-left text-[20px] md:text-[40px] font-extrabold">
+        <h1 className="gradient text-shadow text-left text-[34px] md:text-[46px] font font-extrabold">
           {preview && (
             <Typewriter
-              words={["PERSONAL & CLIENT PROJECTS"]}
+              words={["MY PORTFOLIO"]}
               cursor
               cursorStyle="|"
               typeSpeed={100}
@@ -36,7 +36,7 @@ function Projects() {
             />
           )}
         </h1>
-        <div className="max-w-lg text-[10px] tracking-wider text-left py-2 md:text-[15px] md:leading-6 ">
+        <div className="max-w-lg text-[13px] tracking-wider text-left py-2 md:text-[15px] md:leading-6 ">
           <p>Showcase of all the Projects worked till now.</p>
           <p>
             Major technologies used in these projects are React, Nextjs,
@@ -69,11 +69,9 @@ function Frontend() {
         x: 0,
         transition: { duration: 1 },
         opacity: [0.2, 0.4, 0.6, 0.8, 1],
-        rotate: 360,
       });
       animation2.start({
         x: 0,
-        rotate: 360,
 
         transition: { duration: 1 },
         opacity: [0.2, 0.3, 0.4, 0.9, 1],
@@ -190,11 +188,9 @@ function Fullstack() {
         x: 0,
         transition: { duration: 1 },
         opacity: [0.2, 0.4, 0.6, 0.8, 1],
-        rotate: 360,
       });
       animation2.start({
         x: 0,
-        rotate: 360,
 
         transition: { duration: 1 },
         opacity: [0.2, 0.3, 0.4, 0.9, 1],

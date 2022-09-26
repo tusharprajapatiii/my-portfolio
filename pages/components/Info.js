@@ -39,9 +39,9 @@ function Info() {
         animate={animation}
       >
         {preview && (
-          <h1 className="text-purple-700 gradient text-shadow text-[22px] md:text-[50px] font-extrabold">
+          <h1 className="text-purple-700 font gradient text-shadow text-[34px] md:text-[46px] font-extrabold">
             <Typewriter
-              words={["ME, MYSELF & JOURNEY"]}
+              words={["ME, MYSELF & I"]}
               cursor
               cursorStyle="|"
               typeSpeed={100}
@@ -49,7 +49,7 @@ function Info() {
             />
           </h1>
         )}
-        <div className="py-4 text-left tracking-wider max-w-sm text-[10px] md:text-[15px] md:leading-6 ">
+        <div className="py-4 text-left tracking-wider max-w-sm text-[13px] md:text-[15px] md:leading-6 ">
           <p>
             Tushar, an IT engineer with a fusion of technology and creativity.
             Started the development journey back in 2020 with a passion of
@@ -57,7 +57,7 @@ function Info() {
             comes on my way.
           </p>
           <h4 className="text-base font-semibold">Experience:</h4>
-          <p> Did an 4 month front end development Internship.</p>
+          <p> Did an 6 month front end development Internship.</p>
           <p>Made personal complex full stack projects.</p>
           <p>Served service to three clients as a freelancer till now.</p>
         </div>

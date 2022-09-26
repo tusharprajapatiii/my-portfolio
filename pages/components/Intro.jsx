@@ -32,19 +32,19 @@ function Intro() {
   }, [inView]);
   return (
     <>
-      <section className=" md:h-screen w-full md:flex  items-center xl:items-start lg:justify-start justify-center relative overflow-hidden z-10">
+      <section className=" h-screen w-full md:flex  items-center xl:items-start lg:justify-start justify-center relative overflow-hidden z-10">
         <div className="flex my-2   py-4 relative  flex-col md:flex-row  ">
-          <motion.div
+          {/* <motion.div
             initial={{ y: "-50vh" }}
             animate={{ y: "0vh", rotate: [30, -30, 30, -30, 30, -30, 0] }}
-            transition={{ delay: 6, duration: 2.5 }}
+            transition={{ delay: 4, duration: 2.5 }}
             className="absolute top-[20%]  left-[6.5%] hidden lg:block "
           >
             <Image height={80} width={80} src="/me.png" alt="myself" />
-          </motion.div>
+          </motion.div> */}
           <motion.span
             initial={{ x: 0, y: 0, opacity: 0 }}
-            transition={{ duration: 2.5, ease: "linear", delay: 4.5 }}
+            transition={{ duration: 2.5, ease: "linear", delay: 2 }}
             animate={{
               x: [
                 "-10vw",
@@ -78,8 +78,8 @@ function Intro() {
               fill="red"
             />
           </motion.span>
-          <div className="flex justify-center relative font-bold md:w-[50vw] text-[60px] items-center">
-            <motion.span
+          <div className="flex min-h-screen max-h-[100vh] md:min-h-[inherit] md:max-h-[inherit] flex-col md:flex-row justify-center relative font-bold md:w-[50vw] text-[60px] md:items-center">
+            {/* <motion.span
               initial={{ y: "-100vh" }}
               animate={{
                 y: [
@@ -174,7 +174,7 @@ function Intro() {
               transition={{ duration: 3.7, ease: "linear" }}
             >
               o
-            </motion.span>{" "}
+            </motion.span>{" "} */}
             <motion.h1
               initial={{
                 y: "30vh",
@@ -186,22 +186,37 @@ function Intro() {
               }}
               transition={{
                 duration: 1.5,
-                delay: 3.5,
+                delay: 0.5,
               }}
-              className="absolute lg:left-20  top-16 text-5xl md:text-[50px]   my-10 md:block hidden text-left "
+              className="absolute lg:left-20  top-16 text-5xl md:text-[50px] hidden md:block  my-10  text-left "
             >
               <br />
-              <b className="text-[70px] lg:text-[95px] gradient  text-violet-800  ">
+              <b className="text-[70px] lg:text-[95px] gradient font text-violet-800  ">
                 T
               </b>
               <span className="gradient1">USHAR</span>
               <br />
-              <span className="text-3xl gradient1  lg:text-[32px] pl-4">
+              <span className="text-3xl gradient1  lg:text-[32px] ">
                 Web Developer
               </span>
             </motion.h1>
+            <h1 className="relative px-2 leading-6 flex justify-center flex-col md:hidden">
+              <span className="text-gray-500 font1 text-[38px]  ">Hello,</span>
+              <br />
+              <span className="text-gray-500 text-[38px]">
+                <span className="font text-violet-800 text-[48px]">T</span>
+                ushar here,
+              </span>
+              <br />
+              <span className="text-gray-500 text-[40px]">web developer</span>
+            </h1>
+            <div className="md:hidden">
+              <div className="border-2 my-8 border-purple-600 text-[20px] max-w-fit ml-3 p-2 ">
+                Scroll Down
+              </div>
+            </div>
           </div>
-          <div>
+          <div className="hidden md:block">
             <Image
               className="md:anime m-auto"
               src={`https://thumbs.dreamstime.com/b/mask-activists-guy-fawkes-used-anonymous-lizard-squad-protesters-65170619.jpg`}

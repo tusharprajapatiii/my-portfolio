@@ -13,7 +13,7 @@ function Contact() {
         CONTACT
       </div>
       <div ref={ref} className="max-w-lg mb-6">
-        <h1 className="gradient text-shadow text-[30px] md:text-[50px] font-extrabold">
+        <h1 className="gradient text-shadow text-[34px] font md:text-[46px] font-extrabold">
           {inView && (
             <Typewriter
               words={["CONTACT ME"]}
@@ -23,7 +23,7 @@ function Contact() {
             />
           )}
         </h1>
-        <div className="md:p-10 py-4 space-y-2  ">
+        <div className="md:p-10 space-y-3 md:space-y-0 py-5 md:flex justify-between ">
           <p className="font-semibold text-xs md:text-lg">
             {" "}
             <span className="md:text-2xl   text-purple-700 font-semibold">
