@@ -34,14 +34,14 @@ function Intro() {
     <>
       <section className=" h-screen w-full md:flex  items-center xl:items-start lg:justify-start justify-center relative overflow-hidden z-10">
         <div className="flex my-2   py-4 relative  flex-col md:flex-row  ">
-          <motion.div
+          {/* <motion.div
             initial={{ y: "-50vh" }}
             animate={{ y: "0vh", rotate: [30, -30, 30, -30, 30, -30, 0] }}
             transition={{ delay: 3.5, duration: 2.5 }}
             className="absolute top-[18%]   left-[6.5%] hidden lg:block "
           >
             <Image height={80} width={80} src="/me.png" alt="myself" />
-          </motion.div>
+          </motion.div> */}
           <motion.span
             initial={{ x: 0, y: 0, opacity: 0 }}
             transition={{ duration: 2.5, ease: "linear", delay: 2 }}
