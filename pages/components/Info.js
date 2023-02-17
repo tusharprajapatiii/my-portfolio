@@ -56,10 +56,10 @@ function Info() {
             building and learning new things; from there learning every bit that
             comes on my way.
           </p>
-          <h4 className="text-base font-semibold">Experience:</h4>
+          {/* <h4 className="text-base font-semibold">Experience:</h4>
           <p> Did an 6 month front end development Internship.</p>
           <p>Made personal complex full stack projects.</p>
-          <p>Served service to three clients as a freelancer till now.</p>
+          <p>Served service to three clients as a freelancer till now.</p> */}
         </div>
       </motion.div>
       <motion.div className="relative z-10 animate-bounce lg:flex justify-center items-center hidden  mx-10 right-0 top-8">
